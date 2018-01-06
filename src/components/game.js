@@ -38,7 +38,6 @@ export function Game(props) {
     }
 
     props.dispatch(addGuess(guess));
-    // props.dispatch(changeFeedback(feedback));
 
     // We typically wouldn't touch the DOM directly like this in React
     // but this is the best way to update the title of the page,
@@ -67,7 +66,6 @@ export function Game(props) {
     const guesses = props.guesses;
     const feedback = props.feeback;
     const auralStatus = props.auralStatus;
-    // const { feedback, guesses, auralStatus } = state;
     const guessCount = guesses.length;
 
     return (
